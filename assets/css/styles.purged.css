@@ -401,6 +401,70 @@ main {
   }
 }
 
+/* DASHBOARD PROFILE */
+.profile-section {
+  max-width: 2560px;
+  width: 100%;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.profile-card.left {
+  max-width: 500px;
+  height: 300px;
+  border-top: 100px solid #6B8AD2;
+}
+
+.profile-card.right {
+  max-width: 1200px;
+  height: auto;
+}
+
+.profile-content {
+  position: absolute;
+  top: -50px;
+}
+
+.profile-img img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.fa-eye.form {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.update-profile-btn {
+  background-color: #0CAD55;
+  color: #fff;
+  transition: opacity .3s ease;
+}
+
+.update-profile-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .profile-card {
+    flex: 1 1 100%;
+  }
+}
+
 /* DASHBOARD SERVICES*/
 .services-section {
   max-width: 2560px;
