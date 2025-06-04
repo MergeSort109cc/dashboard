@@ -704,6 +704,53 @@ main {
   padding: 20px;
 }
 
+/* LICH SU GIAO DICH */
+.history-section {
+  max-width: 2560px;
+  width: 100%;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.history-table thead tr {
+  background-color: #6B8AD2;
+  color: #fff;
+  text-align: left;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+.history-table td.actions {
+  white-space: nowrap;
+}
+
+.docx-btn {
+  padding: 10px;
+  background-color: #0CAD55;
+  border: none;
+  color: var(--white-color);
+  border-radius: 5px;
+}
+
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
 @media screen and (max-width: 320px) {
@@ -909,6 +956,46 @@ main {
   }
 
   .giaodich-table td.d-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Bảng quản lý lịch sử giao dịch */
+@media screen and (max-width: 768px) {
+
+  .history-table {
+    border: 0;
+    width: 100%;
+  }
+
+  .history-table thead {
+    display: none;
+  }
+
+  .history-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+  }
+
+  .history-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border: none;
+  }
+
+  .history-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+  }
+
+  .history-table td.d-flex {
     flex-direction: column;
     gap: 0.5rem;
   }
